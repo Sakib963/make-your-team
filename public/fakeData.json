@@ -1,0 +1,65 @@
+[
+    {
+        "id": "playerSPHWPISZNNE5O3CM",
+        "name": "Shakib Al Hasan",
+        "photo": "https://resources.pulse.icc-cricket.com/photo-resources/2023/03/14/120e059c-4a15-4e24-8ba2-0e730e37493c/Shakib-fielding.jpg?width=640&height=360",
+        "rating": "9.5",
+        "price": 1800
+    },
+    {
+        "id": "player9LBEWOMIUS8N486E",
+        "name": "Litton Kumar Das",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgZ8JwtsuoTKQOn4RyET-JI-9CE6eKDTSU6g&usqp=CAU",
+        "rating": "8.5",
+        "price": 1650
+    },
+    {
+        "id": "playerGQ56DJG0BO2FB4QW",
+        "name": "Taskin Ahmed",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FxFcOSNmcBBU-yEsguTAc83eQK8cnbkMlg&usqp=CAU",
+        "rating": "8.0",
+        "price": 1200
+    },
+    {
+        "id": "playerXVZOKPAJITWYS9KF",
+        "name": "Mustafizur Rahman",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdy13DDGt-1bPJh-hFWC6SWNUnqpuMr7bkSA&usqp=CAU",
+        "rating": "9.0",
+        "price": 1500
+    },
+    {
+        "id": "player4RT7RU3BPYQGZEEX",
+        "name": "Mushfiqur Rahim",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgl1D-vDJepJKi_p4ZEZfHoJoclMWFAcFKzw&usqp=CAU",
+        "rating": "7.0",
+        "price": 800
+    },
+    {
+        "id": "playerKWNP7QXT64JZGA7G",
+        "name": "Tamim Iqbal",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmARNtGM7bLVaoDBEnhInEadFZaiGVnWwf8Q&usqp=CAU",
+        "rating": "8.0",
+        "price": 1350
+    },
+    {
+        "id": "playerR2G8EVRCDZDHNF18",
+        "name": "Hasan Mahmud",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwj1UnsotiyC7blCgSVINeA-nUTRN5_qxVew&usqp=CAU",
+        "rating": "8.5",
+        "price": 1250
+    },
+    {
+        "id": "player87AQV0LUT5793LVQ",
+        "name": "Najmul Shanto",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaT_MhxNhZPK3pdFy5ccKmxE8zkdJx-LIm2A&usqp=CAU",
+        "rating": "8.0",
+        "price": 1300
+    },
+    {
+        "id": "playerF24I25FC1ARSAGP8",
+        "name": "Mehidy Hasan",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvaajnr9srjAYoJtjIk-NV30viUJGfCX7JHA&usqp=CAU",
+        "rating": "8.5",
+        "price": 1450
+    }
+]

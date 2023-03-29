@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Players from "./components/Players/Players";
+import SideBar from "./components/SideBar/SideBar";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [players, setPlayers] = useState([]);
+  const [playerList, setPlayerList] = useState([]);
+
+  useEffect(() => {
+    fetch("fakeData.json")
+      .then((res) => res.json())
+      .then((data) => setPlayers(data));
+  }, []);
+
+  useEffect( () => {
+    const storedList = JSON.parse(localStorage.getItem('player-list'));
+    setPlayerList(storedList);
+  },[players])
+
+  const handlePlayers = (player) => {
+    let newList = [];
+    if(!playerList){
+      newList.push(player)
+    }
+    else{
+      const exists = playerList.find(item => item.id === player.id);
+      if(!exists){
+          newList = [...playerList, player];
+      }
+      else{
+          const remainingPlayers = playerList.filter(pl => pl.id !== player.id);
+          newList = [...remainingPlayers, exists];
+      }
+
+    }
+    setPlayerList(newList)
+    localStorage.setItem('player-list', JSON.stringify(newList));
+  }
+
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header></Header>
+      <div className="grid grid-cols-8">
+        <Players players={players} handlePlayers = {handlePlayers}></Players>
+        <SideBar playerList = {playerList}></SideBar>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
